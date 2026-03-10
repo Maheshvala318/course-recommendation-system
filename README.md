@@ -15,8 +15,14 @@ A professional, deployment-ready course recommendation system that utilizes a **
 
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10+-blue?logo=python&logoColor=white)](https://www.python.org/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.50+-red?logo=streamlit&logoColor=white)](https://streamlit.io/)
+[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/maheshvala/course-recommender)
 [![Docker](https://img.shields.io/badge/Docker-Ready-blue?logo=docker&logoColor=white)](https://www.docker.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+---
+
+## 🔗 Live Demo
+**Access the live application here**: [**huggingface.co/spaces/maheshvala/course-recommender**](https://huggingface.co/spaces/maheshvala/course-recommender)
 
 ---
 
