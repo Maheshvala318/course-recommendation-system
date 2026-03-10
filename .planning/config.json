@@ -1,0 +1,12 @@
+{
+  "project_name": "course-recommendation-system",
+  "version": "1.0.0",
+  "created": "2026-03-09",
+  "current_milestone": 1,
+  "current_phase": 2,
+  "settings": {
+    "auto_commit": true,
+    "commit_prefix": "gsd",
+    "branch_strategy": "feature-branch"
+  }
+}

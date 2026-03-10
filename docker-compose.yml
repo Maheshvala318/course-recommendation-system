@@ -1,0 +1,29 @@
+version: "3.9"
+
+services:
+  course-recommender:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: course-recommendation-system:latest
+    container_name: course-recommender
+    ports:
+      - "8501:8501"
+    environment:
+      - DEFAULT_TOP_N=5
+      - SIMILARITY_TOP_K=50
+      - TEXT_WEIGHT=0.7
+      - NUM_WEIGHT=0.3
+    # Read-only mount so you can update data without rebuilding the image
+    volumes:
+      - ./data/processed:/app/data/processed:ro
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8501/_stcore/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    # Prevent the container from using too much memory
+    mem_limit: 2g
+    mem_reservation: 512m

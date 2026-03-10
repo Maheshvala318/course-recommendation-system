@@ -1,0 +1,9 @@
+Dataset/udemy.csv filter=lfs diff=lfs merge=lfs -text
+Model/course_data.pkl filter=lfs diff=lfs merge=lfs -text
+Model/course_data_original.pkl filter=lfs diff=lfs merge=lfs -text
+Scrapingfiles/udemy.sql filter=lfs diff=lfs merge=lfs -text
+data/processed/course_data_original.pkl filter=lfs diff=lfs merge=lfs -text
+data/processed/similarity_topk.pkl filter=lfs diff=lfs merge=lfs -text
+data/processed/tfidf_matrix.pkl filter=lfs diff=lfs merge=lfs -text
+*.pkl filter=lfs diff=lfs merge=lfs -text
+*.csv filter=lfs diff=lfs merge=lfs -text

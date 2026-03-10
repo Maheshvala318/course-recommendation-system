@@ -1,0 +1,54 @@
+# ────────────────────────────────────────────────
+# .dockerignore — exclude files from Docker build context
+# ────────────────────────────────────────────────
+
+# Virtual environments
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Git
+.git/
+.gitignore
+
+# Old/legacy files (large, irrelevant)
+_old_files/
+_old_Notebook/
+_old_Scrapingfiles/
+_legacy_large_files/
+
+# Large training artifacts NOT needed by the app at runtime
+data/processed/combined_features.pkl
+data/processed/course_data.pkl
+data/raw/
+
+# Jupyter notebooks (not needed in production)
+*.ipynb
+notebooks/
+
+# Test / scripts (not needed in production)
+tests/
+scripts/
+
+# Environment files (use Docker env vars instead)
+.env
+.env.*
+!.env.example
+
+# IDE / editor
+.vscode/
+.idea/
+*.code-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docs (not needed in image)
+*.md
+!README.md

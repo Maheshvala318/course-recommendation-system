@@ -1,0 +1,55 @@
+# ==== Data & Model Artifacts ====
+*.pkl
+*.csv
+*.xls
+*.xlsx
+*.sql
+data/raw/
+_legacy_large_files/
+_old_files/
+_old_Notebook/
+_old_Scrapingfiles/
+
+# Allow only these specific files for live deployment
+!data/processed/course_data_original.pkl
+!data/processed/similarity_topk.pkl
+!data/processed/tfidf_matrix.pkl
+!data/processed/tfidf_vectorizer.pkl
+
+# Still ignore the rest of processed data (especially combined_features.pkl)
+data/processed/*
+
+# ==== Python ====
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ==== Jupyter ====
+.ipynb_checkpoints/
+
+# ==== Environment ====
+.env
+.venv/
+venv/
+env/
+
+# ==== IDE ====
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ==== OS ====
+Thumbs.db
+.DS_Store
+
+# ==== Docker ====
+docker-compose.override.yml
+
+# ==== GSD Planning ====
+# Keep .planning/ tracked but ignore research cache
+.planning/cache/
